@@ -1,0 +1,23 @@
+2026-05-16 08:58:55 === START AUTOMATED DOWNLOAD PIPELINE ===
+2026-05-16 08:58:55 Scanning options for Year: 2020
+2026-05-16 08:58:55   Found endpoint: https://www.socpoist.sk/sites/default/files/2022-10/%C5%A0tatistick%C3%A9%20%C3%BAdaje%20z%20oblasti%20d%C3%B4chodkov%C3%A9ho%20pistenia%20rok%202020.xlsx
+2026-05-16 08:58:55   Success saving: socpoist_dochodky_2020.xlsx using remote context [2022-10]
+2026-05-16 08:58:55 Scanning options for Year: 2021
+2026-05-16 08:58:55   Found endpoint: https://www.socpoist.sk/sites/default/files/2022-10/%C5%A0tatistick%C3%A9%20%C3%BAdaje%20z%20oblasti%20d%C3%B4chodkov%C3%A9ho%20poistenia%20rok%202021.xlsx
+2026-05-16 08:58:56   Success saving: socpoist_dochodky_2021.xlsx using remote context [2022-10]
+2026-05-16 08:58:56 Scanning options for Year: 2022
+2026-05-16 08:58:56   Found endpoint: https://www.socpoist.sk/sites/default/files/2023-02/%C5%A0tatistick%C3%A9%20%C3%BAdaje%20z%20oblasti%20d%C3%B4chodkov%C3%A9ho%20poistenia%20rok%202022.xlsx
+2026-05-16 08:58:56   Success saving: socpoist_dochodky_2022.xlsx using remote context [2023-02]
+2026-05-16 08:58:56 Scanning options for Year: 2023
+2026-05-16 08:58:56   Found endpoint: https://www.socpoist.sk/sites/default/files/2024-02/%C5%A0tatistick%C3%A9%20%C3%BAdaje%20z%20oblasti%20d%C3%B4chodkov%C3%A9ho%20poistenia%20rok%202023.xlsx
+2026-05-16 08:58:56   Success saving: socpoist_dochodky_2023.xlsx using remote context [2024-02]
+2026-05-16 08:58:56 Scanning options for Year: 2024
+2026-05-16 08:58:57   Found endpoint: https://www.socpoist.sk/sites/default/files/2025-02/%C5%A0tatistick%C3%A9%20%C3%BAdaje%20z%20oblasti%20d%C3%B4chodkov%C3%A9ho%20poistenia%20rok%202024.xlsx
+2026-05-16 08:58:57   Success saving: socpoist_dochodky_2024.xlsx using remote context [2025-02]
+2026-05-16 08:58:57 Scanning options for Year: 2025
+2026-05-16 08:58:57   Found endpoint: https://www.socpoist.sk/sites/default/files/2026-02/%C5%A0tatistick%C3%A9%20%C3%BAdaje%20z%20oblasti%20d%C3%B4chodkov%C3%A9ho%20poistenia%20rok%202025.xlsx
+2026-05-16 08:58:57   Success saving: socpoist_dochodky_2025.xlsx using remote context [2026-02]
+2026-05-16 08:58:57 Scanning options for Year: 2026
+2026-05-16 08:58:58   Found endpoint: https://www.socpoist.sk/sites/default/files/2026-04/%C5%A0tatistick%C3%A9%20%C3%BAdaje%20z%20oblasti%20d%C3%B4chodkov%C3%A9ho%20poistenia%20rok%202026.xlsx
+2026-05-16 08:58:59   Success saving: socpoist_dochodky_2026.xlsx using remote context [2026-04]
+2026-05-16 08:58:59 === END AUTOMATED DOWNLOAD PIPELINE ===

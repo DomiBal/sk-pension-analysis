@@ -1,0 +1,8 @@
+﻿Pension_Type_ID,Pension_Type_Name,Pension_Sort_Order
+1,Invalidný dôchodok do 70 %,3
+2,Invalidný dôchodok nad 70 %,3
+3,Predčasný starobný dôchodok,2
+4,Sirotský dôchodok,3
+5,Starobný dôchodok,1
+6,Vdovecký dôchodok,3
+7,Vdovský dôchodok,3

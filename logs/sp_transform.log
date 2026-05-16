@@ -1,0 +1,136 @@
+2026-05-16 09:03:04 === START ETL TRANSFORMATION PIPELINE ===
+2026-05-16 09:03:04 Found 7 Excel files for extraction.
+2026-05-16 09:03:04 Processing workbook: socpoist_dochodky_2020.xlsx (2020)
+2026-05-16 09:03:04   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:03:04   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:03:04   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:03:04 Processing workbook: socpoist_dochodky_2021.xlsx (2021)
+2026-05-16 09:03:04   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:03:04   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:03:04   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:03:04 Processing workbook: socpoist_dochodky_2022.xlsx (2022)
+2026-05-16 09:03:04   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:03:04   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:03:04   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:03:04 Processing workbook: socpoist_dochodky_2023.xlsx (2023)
+2026-05-16 09:03:04   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:03:04   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:03:04   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:03:04 Processing workbook: socpoist_dochodky_2024.xlsx (2024)
+2026-05-16 09:03:04   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:03:04   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:03:04   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:03:04 Processing workbook: socpoist_dochodky_2025.xlsx (2025)
+2026-05-16 09:03:04   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:03:04   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:03:04   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:03:04 Processing workbook: socpoist_dochodky_2026.xlsx (2026)
+2026-05-16 09:03:04   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:03:04   Target sheet found: [priemerná výška dôchodkov] -> Avg_Amount
+2026-05-16 09:03:04   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:03:04 Saved dimension: dim_pension_type.csv (7 entries)
+2026-05-16 09:03:04 Saved fact table: fact_pensions.csv (525 records)
+2026-05-16 09:03:04 Saved dimension: dim_date.csv (75 dates)
+2026-05-16 09:03:04 === ETL PIPELINE FINISHED SUCCESSFULLY ===
+2026-05-16 09:29:21 === START ETL TRANSFORMATION PIPELINE ===
+2026-05-16 09:29:21 Found 7 Excel files for extraction.
+2026-05-16 09:29:21 Processing workbook: socpoist_dochodky_2020.xlsx (2020)
+2026-05-16 09:29:21   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:29:21   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:29:21   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:29:21 Processing workbook: socpoist_dochodky_2021.xlsx (2021)
+2026-05-16 09:29:21   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:29:21   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:29:21   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:29:21 Processing workbook: socpoist_dochodky_2022.xlsx (2022)
+2026-05-16 09:29:21   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:29:21   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:29:21   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:29:21 Processing workbook: socpoist_dochodky_2023.xlsx (2023)
+2026-05-16 09:29:21   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:29:21   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:29:22   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:29:22 Processing workbook: socpoist_dochodky_2024.xlsx (2024)
+2026-05-16 09:29:22   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:29:22   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:29:22   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:29:22 Processing workbook: socpoist_dochodky_2025.xlsx (2025)
+2026-05-16 09:29:22   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:29:22   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:29:22   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:29:22 Processing workbook: socpoist_dochodky_2026.xlsx (2026)
+2026-05-16 09:29:22   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:29:22   Target sheet found: [priemerná výška dôchodkov] -> Avg_Amount
+2026-05-16 09:29:22   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:29:22 Saved dimension: dim_pension_type.csv (7 entries)
+2026-05-16 09:29:22 Saved fact table: fact_pensions.csv (525 records)
+2026-05-16 09:29:22 Saved dimension: dim_date.csv (75 dates)
+2026-05-16 09:29:22 === ETL PIPELINE FINISHED SUCCESSFULLY ===
+2026-05-16 09:38:38 === START ETL TRANSFORMATION PIPELINE ===
+2026-05-16 09:38:38 Found 7 Excel files for extraction.
+2026-05-16 09:38:38 Processing workbook: socpoist_dochodky_2020.xlsx (2020)
+2026-05-16 09:38:39   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:38:39   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:38:39   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:38:39 Processing workbook: socpoist_dochodky_2021.xlsx (2021)
+2026-05-16 09:38:39   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:38:39   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:38:39   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:38:39 Processing workbook: socpoist_dochodky_2022.xlsx (2022)
+2026-05-16 09:38:39   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:38:39   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:38:39   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:38:39 Processing workbook: socpoist_dochodky_2023.xlsx (2023)
+2026-05-16 09:38:39   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:38:39   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:38:39   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:38:39 Processing workbook: socpoist_dochodky_2024.xlsx (2024)
+2026-05-16 09:38:39   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:38:39   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:38:39   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:38:39 Processing workbook: socpoist_dochodky_2025.xlsx (2025)
+2026-05-16 09:38:39   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:38:39   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 09:38:39   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:38:39 Processing workbook: socpoist_dochodky_2026.xlsx (2026)
+2026-05-16 09:38:39   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 09:38:39   Target sheet found: [priemerná výška dôchodkov] -> Avg_Amount
+2026-05-16 09:38:39   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 09:38:39 Saved dimension: dim_pension_type.csv (7 entries)
+2026-05-16 09:38:39 Saved fact table: fact_pensions.csv (525 records)
+2026-05-16 09:38:39 Saved dimension: dim_date.csv (75 dates)
+2026-05-16 09:38:39 === ETL PIPELINE FINISHED SUCCESSFULLY ===
+2026-05-16 12:13:13 === START ETL TRANSFORMATION PIPELINE ===
+2026-05-16 12:13:13 Found 7 Excel files for extraction.
+2026-05-16 12:13:13 Processing workbook: socpoist_dochodky_2020.xlsx (2020)
+2026-05-16 12:13:14   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 12:13:14   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 12:13:14   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 12:13:14 Processing workbook: socpoist_dochodky_2021.xlsx (2021)
+2026-05-16 12:13:14   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 12:13:14   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 12:13:14   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 12:13:14 Processing workbook: socpoist_dochodky_2022.xlsx (2022)
+2026-05-16 12:13:14   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 12:13:14   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 12:13:14   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 12:13:14 Processing workbook: socpoist_dochodky_2023.xlsx (2023)
+2026-05-16 12:13:14   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 12:13:14   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 12:13:14   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 12:13:14 Processing workbook: socpoist_dochodky_2024.xlsx (2024)
+2026-05-16 12:13:14   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 12:13:14   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 12:13:14   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 12:13:14 Processing workbook: socpoist_dochodky_2025.xlsx (2025)
+2026-05-16 12:13:14   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 12:13:14   Target sheet found: [priemerná výška] -> Avg_Amount
+2026-05-16 12:13:14   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 12:13:14 Processing workbook: socpoist_dochodky_2026.xlsx (2026)
+2026-05-16 12:13:14   Target sheet found: [počet vyplácaných dôchodkov] -> Count_Paid
+2026-05-16 12:13:14   Target sheet found: [priemerná výška dôchodkov] -> Avg_Amount
+2026-05-16 12:13:14   Target sheet found: [novopriznané dôchodky] -> Count_New
+2026-05-16 12:13:14 Saved dimension: dim_pension_type.csv (7 entries)
+2026-05-16 12:13:14 Saved fact table: fact_pensions.csv (525 records)
+2026-05-16 12:13:14 Saved dimension: dim_date.csv (75 dates)
+2026-05-16 12:13:14 === ETL PIPELINE FINISHED SUCCESSFULLY ===
