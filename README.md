@@ -42,6 +42,7 @@ sk-pension-analysis/
 │
 ├── sp_pension_report.pbix # FÁZA 3: Interaktívny Power BI report a dátový model
 └── README.md         # Dokumentácia projektu
+```
 
 **⚙️ Detailná architektúra riešenia**
 📌 Fáza 1: Resilientný zber dát (download_data.py)
