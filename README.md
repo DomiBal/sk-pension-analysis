@@ -45,57 +45,34 @@ sk-pension-analysis/
 ```
 
 **⚙️ Detailná architektúra riešenia**
-📌 Fáza 1: Resilientný zber dát (download_data.py)
+
+*📌 Fáza 1:* Resilientný zber dát (download_data.py)
 Zdrojové datasety sú Sociálnou poisťovňou ukladané s vysokou mierou nekonzistentnosti. Skript tento problém rieši pomocou pokročilej logiky odolnosti:
+* **Dynamické vyhľadávanie endpointov:** Generuje prioritný zoznam alternatívnych vzdialených ciest (YYYY-MM), keďže ľudský faktor v SP ukladá ročné uzávierky zakaždým do iných priečinkov.
+* **Ochrana pred ľudskými chybami:** Obsahuje mechanizmus premostenia chýb v názvoch súborov (napr. úspešne zachytáva a spracováva kritický preklep z roku 2020: ...dôchodkového pistenia rok 2020.xlsx).
+* **Efektívny sieťový traffic:** Využíva rýchle overovanie prítomnosti súboru pomocou HTTP HEAD požiadaviek a až po validácii (Status 200) spúšťa bezpečné streamovanie binárneho payloadu (requests.get).
 
-Dynamické vyhľadávanie endpointov: Generuje prioritný zoznam alternatívnych vzdialených ciest (YYYY-MM), keďže ľudský faktor v SP ukladá ročné uzávierky zakaždým do iných priečinkov.
-
-Ochrana pred ľudskými chybami: Obsahuje mechanizmus premostenia chýb v názvoch súborov (napr. úspešne zachytáva a spracováva kritický preklep z roku 2020: ...dôchodkového pistenia rok 2020.xlsx).
-
-Efektívny sieťový traffic: Využíva rýchle overovanie prítomnosti súboru pomocou HTTP HEAD požiadaviek a až po validácii (Status 200) spúšťa bezpečné streamovanie binárneho payloadu (requests.get).
-
-📌 Fáza 2: ETL a Relačné modelovanie (transform_data.py)
+*📌 Fáza 2:* ETL a Relačné modelovanie (transform_data.py)
 Surové dáta z Excelov prechádzajú hĺbkovým čistením a pretavením do čistej hviezdicovej architektúry (Star Schema):
+* **Textový parsing & Unifikácia:** Odstraňuje diakritiku, normalizuje formáty textov, zjednocuje slovenské názvy mesiacov na číselné indexy a extrahuje časový kontext priamo z metadát súborov.
+* **Ochrana pred kolíziou kľúčových slov:** Vyhľadávací mapovací algoritmus typov dôchodkov (PENSION_MAP) automaticky radí kľúče podľa dĺžky (od najdlhšieho po najkratší). Tým sa garantuje, že reťazec "starobný" nepredbehne a nepohltí špecifický "predčasný starobný dôchodok".
+* **Export do Dátového skladu:** Skript generuje tri optimalizované CSV súbory, pričom dimenzie (dim_date, dim_pension_type) už obsahujú indexy zoradenia vygenerované priamo z Pythonu (Pension_Sort_Order, Year_Month).
 
-Textový parsing & Unifikácia: Odstraňuje diakritiku, normalizuje formáty textov, zjednocuje slovenské názvy mesiacov na číselné indexy a extrahuje časový kontext priamo z metadát súborov.
-
-Ochrana pred kolíziou kľúčových slov: Vyhľadávací mapovací algoritmus typov dôchodkov (PENSION_MAP) automaticky radí kľúče podľa dĺžky (od najdlhšieho po najkratší). Tým sa garantuje, že reťazec "starobný" nepredbehne a nepohltí špecifický "predčasný starobný dôchodok".
-
-Export do Dátového skladu: Skript generuje tri optimalizované CSV súbory, pričom dimenzie (dim_date, dim_pension_type) už obsahujú indexy zoradenia vygenerované priamo z Pythonu (Pension_Sort_Order, Year_Month).
-
-📌 Fáza 3: Power BI Analytický model & UI/UX
+*📌 Fáza 3:* Power BI Analytický model & UI/UX
 Dáta sú prepojené v čistej hviezdicovej mriežke (1:N vzťahy medzi Dimenziami a Faktovou tabuľkou fact_pensions).
-
-DAX Engine: Výpočty KPI kariet sú postavené na exaktnej funkcii AVERAGE, ktorá dynamicky reaguje na filter časovej osi (napr. pri roku 2026 automaticky zosumarizuje dostupné mesiace a vypočíta správny aritmetický priemer).
-
-Domain Color-Coding (Farebné kódovanie): Report využíva psychológiu farieb na okamžitú orientáciu užívateľa na jednotlivých hárkoch:
-
-Starobné dôchodky (Corporate Blue): Tmavomodrá a biznis modrá paleta pre makroobjemy a analýzu legislatívneho piku.
-
-Invalidné dôchodky (Emerald Green): Smaragdové a mätové tóny dedikované téme zdravia (rozdelenie stavov do 70 % a nad 70 %).
-
-Pozostalostné dôchodky (Slate Grey): Elegantná, dôstojná škála pre špecifické mikro-KPI vdovských, vdoveckých a sirotských dávok.
-
-Čisté UI bez scrollbarov: Os X je nastavená na plynulý režim Continuous vďaka dátovému formátu zladenému na úrovni modelu, čo odstránilo vizuálne rušivé posuvníky.
+* **DAX Engine:** Výpočty KPI kariet sú postavené na exaktnej funkcii AVERAGE, ktorá dynamicky reaguje na filter časovej osi (napr. pri roku 2026 automaticky zosumarizuje dostupné mesiace a vypočíta správny aritmetický priemer).
+* **Domain Color-Coding (Farebné kódovanie):** Report využíva psychológiu farieb na okamžitú orientáciu užívateľa na jednotlivých hárkoch:
+* **Čisté UI bez scrollbarov:** Os X je nastavená na plynulý režim Continuous vďaka dátovému formátu zladenému na úrovni modelu, čo odstránilo vizuálne rušivé posuvníky.
 
 **🚀 Ako spustiť projekt lokálne (Krok za krokom)**
-Klonovanie repozitára:
 
-git clone [https://github.com/DomiBal/sk-pension-analysis.git](https://github.com/DomiBal/sk-pension-analysis.git)
+* *Klonovanie repozitára:* git clone [https://github.com/DomiBal/sk-pension-analysis.git](https://github.com/DomiBal/sk-pension-analysis.git)
 cd sk-pension-analysis
-Inštalácia závislostí:
-Uisti sa, že máš nainštalované potrebné Python knižnice pre prácu so sieťou a Excelmi:
-
-pip install requests pandas openpyxl
-Spustenie Fázy 1 (Stiahnutie zdrojových dát):
-Skript vytvorí priečinok data/raw/ a autonómne stiahne ročné datasety priamo zo serverov Sociálnej poisťovne:
-
-python scripts/download_data.py
-Spustenie Fázy 2 (Transformácia a ETL):
-Skript spracuje surové Excel súbory, vykoná čistenie a do data/processed/ uloží hotové CSV súbory:
-
-python scripts/transform_data.py
-Otvorenie a Refresh reportu:
-Spusť report sp_pension_report.pbix v aplikácii Power BI Desktop a na hlavnej karte klikni na Refresh. Model automaticky nasaje čerstvo vygenerované dáta z Pythonu.
+* *Inštalácia závislostí:* Uisti sa, že máš nainštalované potrebné Python knižnice pre prácu so sieťou a Excelmi - pip install requests pandas openpyxl
+* *Spustenie Fázy 1 (Stiahnutie zdrojových dát):* 
+Skript autonómne stiahne ročné datasety priamo zo serverov Sociálnej poisťovne: python scripts/download_data.py
+* *Spustenie Fázy 2 (Transformácia a ETL):*
+Skript spracuje surové Excel súbory, vykoná čistenie a do data/processed/ uloží hotové CSV súbory: python scripts/transform_data.py
+* *Otvorenie a Refresh reportu:* Spusť report sp_pension_report.pbix v aplikácii Power BI Desktop a na hlavnej karte klikni na Refresh. Model automaticky nasaje čerstvo vygenerované dáta z Pythonu.
 
 Autor: Dominika Balabanova
