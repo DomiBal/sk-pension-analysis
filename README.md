@@ -63,6 +63,7 @@ Dáta sú prepojené v čistej hviezdicovej mriežke (1:N vzťahy medzi Dimenzia
 * **DAX Engine:** Výpočty KPI kariet sú postavené na exaktnej funkcii AVERAGE, ktorá dynamicky reaguje na filter časovej osi (napr. pri roku 2026 automaticky zosumarizuje dostupné mesiace a vypočíta správny aritmetický priemer).
 * **Domain Color-Coding (Farebné kódovanie):** Report využíva psychológiu farieb na okamžitú orientáciu užívateľa na jednotlivých hárkoch:
 * **Čisté UI bez scrollbarov:** Os X je nastavená na plynulý režim Continuous vďaka dátovému formátu zladenému na úrovni modelu, čo odstránilo vizuálne rušivé posuvníky.
+<img width="1119" height="628" alt="image" src="https://github.com/user-attachments/assets/98e6db35-fbec-42e5-a5d3-548056c4fe9a" />
 
 **🚀 Ako spustiť projekt lokálne (Krok za krokom)**
 
